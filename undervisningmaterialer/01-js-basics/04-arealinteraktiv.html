@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <input type="number" id="height">
+    <input type="number" id="width">
+
+    <button id="knap">submit</button>
+    <script>
+        let minKnap = document.querySelector("#knap");
+
+
+
+        minKnap.addEventListener("click", funktionNavn);
+
+        function funktionNavn() {
+            console.log("længde: " + document.querySelector("#height").value + " bredde: " + document.querySelector("#width").value + " areal:" + document.querySelector("#height").value * document.querySelector("#width").value);
+        }
+    </script>
+</body></html>

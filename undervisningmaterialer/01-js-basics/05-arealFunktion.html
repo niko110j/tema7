@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <input type="number" id="height">
+    <input type="number" id="width">
+
+    <button id="knap">submit</button>
+    <script>
+        var minKnap = document.querySelector("#knap");
+        minKnap.addEventListener("click", funktAreal);
+
+        var height = document.querySelector("#height").value;
+        var width = document.querySelector("#width").value;
+        var areal = height * width;
+
+
+        function funktAreal() {
+
+            console.log("areal:" + document.querySelector("#height").value * document.querySelector("#width").value);
+            if (areal = 0) {
+
+                console.log("arealet er for lille");
+            }
+        }
+
+    </script>
+</body>
+
+</html>
